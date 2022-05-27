@@ -88,7 +88,7 @@ This file will install to `/etc/pwnagotchi/config.toml`, and can be edited there
 
 ### First Boot and SSH
 
-To update your pwnagotchi, connect it to your pc with a micro USB data cable, using the data port of the RPi Zero. First boot will take several minutes, as noted on the official website. Once connected, your pc should detect it as a wired connection or usb interface in the network settings. I used the following settings, per the official guide.
+To update your pwnagotchi, connect it to your pc with a micro USB data cable, using the data port of the RPi Zero. First boot will take several minutes, as noted on the official website. Once connected, your pc should detect it as a wired connection or usb interface in the network settings. I used the following network settings, per the official guide.
 
 | Parameter | Value         |
 | --------- | ------------- |
@@ -106,7 +106,7 @@ The default password is "raspberry", and should be changed.
 
 ### Internet Connection
 
-Once connected, I needed to set up my host machine and the Raspberry Pi Zero for NAT forwarding. I recommend using the [script](https://pwnagotchi.ai/configuration/#host-connection-sharing) provided by pwnagotchi, so you may want to try that first on your machine.then developing your own if you have any issues. I ended up writing my own so that I could learn the process better and make a few tweaks that helped on my system.
+Once connected, I needed to set up my host machine and the Raspberry Pi Zero for NAT forwarding. I recommend using the [script](https://pwnagotchi.ai/configuration/#host-connection-sharing) provided by pwnagotchi, developing your own if you have any issues. I ended up writing my own so that I could learn the process better and make a few tweaks that helped on my system.
 
 ##### Contents of `internet_share.sh`
 
